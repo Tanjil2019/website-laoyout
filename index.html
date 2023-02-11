@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calender</title>
+    <style>
+        .calender{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            row-gap: 10px;
+            column-gap: 12px;
+            background-color: cadetblue;
+            border: 5px solid rgb(150, 149, 149);
+        }
+        .date{
+            background-color: rgb(242, 244, 248);
+            font-size: 2.4rem;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            border-radius: 7px;
+            text-shadow: 3px 2px 4px black;
+        }
+        .other-month{
+            background-color: rgb(97, 99, 98);
+            color: aliceblue;
+        }
+        #day{
+            background-color: rgb(66, 131, 131);
+            color: rgb(249, 250, 247);
+            font-size: 2.5rem;
+        }
+        h1{
+            background-color: cadetblue;
+            padding: 40px;
+            margin: -20px;
+            text-align: center;
+            font-size: 3rem;
+
+        }
+        .today{
+            background-color:rgb(0, 0, 0);
+            border-radius: 50%;
+            color: white;
+        }
+    
+    </style>
 </head>
 <body>
-    
-</body>
+    <h1>Calender (2023-Feb)</h1>
+    <div class="calender">
+        <div id="day" class="date">Sun</div>
+        <div id="day" class="date">Mon</div>
+        <div id="day" class="date">Tue</div>
+        <div id="day" class="date">Wed</div>
+        <div id="day" class="date">Thu</div>
+        <div id="day" class="date">Fri</div>
+        <div id="day" class="date">Sat</div>
+        <div class="other-month date">28</div>
+        <div class="other-month date">29</div>
+        <div class=" other-month date">30</div>
+        <div class=" other-month date">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="today date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="other-month date">1</div>
+        <div class="other-month date">2</div>
+        <div class="other-month date">3</div>
+    </div>
 </html>
