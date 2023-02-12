@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>.
+       <style>
+              /* 4.Body max-width and margin auto */
+              body{
+                     max-width: 900px;
+                     border: 1px solid brown;
+                     margin: 0 auto;
+              }
+              h1{
+                     font-size: 10vw;
+              }
+              .tiger img{
+                     width: 100%;
+
+              }
+              .container {
+                     display: flex;
+              }
+              .container .sprit{
+                     width: 50%;
+              }
+              .sprit img{
+                     width: 100%;
+              }
+              @media screen and (max-width:576px) {
+                     .container {
+                     flex-direction: column-reverse;
+              } 
+              .container .sprit{
+                     width: 100%;
+                     flex-direction: row-reverse;
+              }
+              }
+       </style>
+</head>
+<body>
+       <!-- 2.CSS Relative unit -->
+      <section>
+       <h1>Responsive Website</h1>
+      </section>
+      <!--  3 Responsive Image (Fluid img) -->
+      <section class="tiger">
+          <img src="imeges/tiger.jpg" alt="">
+      </section>
+      <!-- Responsive Split screen using flex -->
+      <section>
+       <div class="container">
+              <div class="sprit">
+                     <img src="imeges/food.jpg" alt="">
+              </div>
+              <div class="sprit">
+                     <img src="imeges/tiger.jpg" alt="">
+              </div>
+       </div>
+      </section>
+       <!-- 
+         Responsive Website
+        1. View meta tag
+        2.CSS Relative unit
+        3. Responsive Image (Fluid img)
+        4.Body max-width and margin auto
+        5Responsive Split screen using flex
+       -->
+
+</body>
+</html>
